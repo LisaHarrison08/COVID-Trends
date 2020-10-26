@@ -37,5 +37,8 @@ Google presented its COVID-19 Community Mobility Reports  (https://www.google.co
 5. Your project must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes).
 6. Your final visualization should ideally include at least three views.
 
+### Credits
+All data, available for public use, is sourced from Google Community Mobility Reports. This project does not claim any ownership over the data, and is not reponsible for guaranteeing accuracy of the data.
+
 
 
