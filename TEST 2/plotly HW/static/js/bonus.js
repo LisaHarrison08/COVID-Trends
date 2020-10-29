@@ -39,7 +39,7 @@ var trace3 = {
 
 var trace4 = {
     type: "scatter",
-    mode: "lines",
+    mode: "dotted-lines",
     name: 'Transit',
     x: unpack(rows, 'dates'),
     y: unpack(rows, 'SMA_transit'),
@@ -48,7 +48,7 @@ var trace4 = {
 var data = [trace1, trace2,trace3, trace4];
 
 var layout = {
-    title: 'Basic Time Series',
+    title: 'VA Mobility Trends',
 };
 
 Plotly.newPlot('myDiv', data, layout);
