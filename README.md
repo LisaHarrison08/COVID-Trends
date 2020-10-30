@@ -47,7 +47,7 @@ Select the date and see the tweet!
 6. Your final visualization should ideally include at least three views.
 
 ### Credits
-All data, available for public use, is sourced from Google Community Mobility Reports. This project does not claim any ownership over the data, and is not reponsible for guaranteeing accuracy of the data.
+All data, available for public use, is sourced from Google Community Mobility Reports and The Trump Archive. This project does not claim any ownership over the data, and is not reponsible for guaranteeing accuracy of the data.
 
 
 
