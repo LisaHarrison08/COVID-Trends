@@ -1,28 +1,37 @@
-# COVID-Mobility-Trends
+# COVID-Trends
 
 In response to tackling the Coronavirus pandemic, countries across the world have implemented a number of different policies. Including 'stay-at-home orders', work place closures (with many employees working from home), school closures (online teaching being adopted by many schools) as well as restrictions on social gatherings, public transportation, and cancellations of large events.  Such measures were taken in order to slow the spread of the virus through limiting public movement and interactions.
 
-What impact has this had globally on movement?
+What impact has this had on movement?
 
 Google presented its COVID-19 Community Mobility Reports  (https://www.google.com/covid19/mobility/) which measures visitor numbers to specfic category locations:
 
-### Retail & Recreation:
+#### Retail & Recreation:
 *Mobility trends for places like restaurants, cafes, shopping centers, theme parks, museums, libraries, and movie theaters. 
 
-### Grocery & Pharmacy: 
+#### Grocery & Pharmacy: 
 *Mobility trends for places like grocery markets, food warehouses, farmers markets, specialty food shops, drug stores, and pharmacies. 
 
-### Parks: 
+#### Parks: 
 *Mobility trends for places like national parks, public beaches, marinas, dog parks, plazas, and public gardens. 
 
-### Transit Stations: 
+#### Transit Stations: 
 *Mobility trends for places like public transport hubs such as subway, bus, and train stations. 
 
-### Workplaces: 
+#### Workplaces: 
 *Mobility trends for places of work. 
 
-### Residential: 
+#### Residential: 
 *Mobility trends for places of residence. 
+
+## Trump Tweets
+
+What was the President of the United States response to the pandemic?
+
+Trump + Twitter, what a combination! He is likely the only President in the world that uses Twitter the most who also doesn’t seem to have a team of people managing the account for him. 
+
+Select the date and see the tweet!
+
 
 
 ### Project Specific Requirements
