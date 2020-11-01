@@ -10,8 +10,18 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
         return rows.filter(function (row) { return row.states === state; });
     }
     //1. get all the states from json  
+    var statesArray = rows.map(function(row){ return row.states; }); //all states, but with duplicates
+    var stateSet = new Set(statesArray); //remove all duplicates!!!!
+    var uniqueStates = Array.from(stateSet); //convert back into an array
 
     //2. populate the dropdown with states
+    var select = document.getElementById("selDataset");
+    for (var state of uniqueStates){ //1. state = "Alabama", 2. state = "Alaska"
+        var option = document.createElement("option");
+          option.setAttribute("value", state);
+          option.textContent = state;
+          select.appendChild(option);
+    }
 
     //3. listen for changes to the dropdown, triggering drawing graph
     function drawPlot(rows) {
