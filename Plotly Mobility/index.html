@@ -1,14 +1,15 @@
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>COVID Mobility Trends</title>
-  
-  <!--Styles-->
-  <link rel="stylesheet" href="static/css/style.css">
-  <!--Google Fonts Link -->
-  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
-  <!--Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>COVID Mobility Trends</title>
+
+<!--Styles-->
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/d3Style.css">
+<!--Google Fonts Link -->
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+<!--Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-2">
         <div class="well">
           <h5>State Selector:</h5>
           <select id="selDataset"></select>
@@ -34,27 +35,22 @@
           </div>
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-10">
         <div id="myDiv"></div>
       </div>
-      <div class="col-md-2">
-        <div id="scatter"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="map"></div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="./static/js/app.js"></script>
-  <!-- <script src="./static/js/bonus.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./static/js/app.js"></script>
 
-  
+
 </body>
 
 </html>
