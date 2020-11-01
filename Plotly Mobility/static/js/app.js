@@ -24,6 +24,15 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
     }
 
     //3. listen for changes to the dropdown, triggering drawing graph
+    select.addEventListener("change", function(event){ getData(event.target.value) });
+    function getData(state){
+        let data = byState(state);
+          drawPlot(data);
+    }
+      
+    //4. by default, trigger graph for "Alabama"
+    getData("Alabama"); //default state
+
     function drawPlot(rows) {
         var trace1 = {
             type: "scatter",
