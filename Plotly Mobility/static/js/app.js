@@ -40,16 +40,15 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
             name: 'Retail & Recreation',
             x: unpack(rows, 'dates'),
             y: unpack(rows, 'SMA_retail_recreation'),
-            line: { color: '#17BECF' }
+            line: { color: '#00CED1' }
         }
-
         var trace2 = {
             type: "scatter",
             mode: "lines",
             name: 'Parks',
             x: unpack(rows, 'dates'),
             y: unpack(rows, 'SMA_parks'),
-            line: { color: 'red' }
+            line: { color: '#708090'}
         }
         var trace3 = {
             type: "scatter",
@@ -57,18 +56,33 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
             name: 'Grocery & Pharmacy',
             x: unpack(rows, 'dates'),
             y: unpack(rows, 'SMA_grocery_pharmacy'),
-            line: { color: 'green' }
+            line: { color: '#FF7F50' }
         }
-
         var trace4 = {
             type: "scatter",
             mode: "dotted-lines",
             name: 'Transit',
             x: unpack(rows, 'dates'),
             y: unpack(rows, 'SMA_transit'),
-            line: { color: '#7F7F7F' }
+            line: { color: '#00FF00' }
         }
-        var data = [trace1, trace2, trace3, trace4];
+        var trace5 = {
+            type: "scatter",
+            mode: "dotted-lines",
+            name: 'Workplaces',
+            x: unpack(rows, 'dates'),
+            y: unpack(rows, 'SMA_workplaces'),
+            line: { color: '#9932CC'}
+        }
+        var trace6 = {
+            type: "scatter",
+            mode: "dotted-lines",
+            name: 'Residential',
+            x: unpack(rows, 'dates'),
+            y: unpack(rows, 'SMA_residential'),
+            line: { color: '#C71585' }
+        }
+        var data = [trace1, trace2, trace3, trace4, trace5, trace6];
 
         var layout = {
             title: 'VA Mobility Trends',
