@@ -43,13 +43,30 @@ body {
   margin: 0;
 }
 
-/* This CSS styles the ufo icon in the navbar */
-.nav-ufo {
-  position: absolute;
-  bottom: 5px;
-  left: 150px;
-  width: 35px;
-  color: white;
+/* Navbar */
+.navbar{
+  max-height: 65px;
+  background-color: white;  
+}
+.navigation .navbar-brand{
+  color: white; 
+  padding: inherit; 
+  font-weight: strong; 
+  background-color: #0BADA6;
+  font-size: 18px;
+  font-family: 'Kufam', cursive, Georgia, 'Times New Roman';
+}
+.nav-link:hover{
+  background-color:#E7E7E7 !important;
+ }
+.navbar-brand:hover{
+color: rgb(209, 131, 199) !important;
+}
+.dropdown-item{
+  color: #6D8092 !important; 
+}
+.dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+  background-color:#E7E7E7 !important; 
 }
 
 .filters .panel-body {
