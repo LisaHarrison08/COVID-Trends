@@ -1,3 +1,7 @@
+### Deployed the current test dashboard to Heroku. Page can be viewed via this link: https://project3-dashboard-test.herokuapp.com/index.html
+
+### !! page is still under development !! ###
+
 # COVID-Trends
 
 In response to tackling the Coronavirus pandemic, countries across the world have implemented a number of different policies. Including 'stay-at-home orders', work place closures (with many employees working from home), school closures (online teaching being adopted by many schools) as well as restrictions on social gatherings, public transportation, and cancellations of large events.  Such measures were taken in order to slow the spread of the virus through limiting public movement and interactions.
