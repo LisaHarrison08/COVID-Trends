@@ -1,9 +1,7 @@
-var svgWidth = 400;
-var svgHeight = 400;
+var svgWidth = 450;
+var svgHeight = 350;
 
-VirusPath = VirusPath
-
-
+// VirusPath = VirusPath
 
 var margin = {
   top: 20,
@@ -17,128 +15,186 @@ var height = svgHeight - margin.top - margin.bottom;
 
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
-var svg2 = d3
-  .select("#virus")
-  .append("svg")
-  .attr("width", svgWidth)
-  .attr("height", svgHeight);
+// var svg2 = d3
+//   .select("#virus")
+//   .append("svg")
+//   .attr("width", svgWidth)
+//   .attr("height", svgHeight);
 
 
   var svg = d3
-  .select("#scatter")
+  .select("#map")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
 
+  // ************************
 
+// MAP PART
+
+// **************************
 
 // Append an SVG group
-var chartGroup = svg.append("g")
-  .attr("transform", `translate(${margin.left}, ${margin.top})scale()`);
-
-// var virusGroup = svg2.append("g")
-//   .attr("transform", "translate(250, 200)");
+// var chartGroup = svg.append("g")
+// .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
-  // Retrieve data from the CSV file and execute everything below
-d3.csv("assets/data/owid-covid-data.csv").then(function(Data) {
+// // The svg
+// var svg = d3.select("svg"),
+//     width = +svg.attr("width"),
+//     height = +svg.attr("height");
+
+// Map and projection
+var projection = d3.geoMercator()
+    .scale(350) // This is the zoom
+    .translate([850, 440]); // You have to play with these values to center your map
+
+// Path generator
+var path = d3.geoPath()
+    .projection(projection)
+
+// Load external data and boot
+d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/us_states_hexgrid.geojson.json", function(data){
+
+  // Draw the map
+   var paths = svg.append("g")
+      .selectAll("path")
+      .data(data.features)
+      .enter()
+      .append("path")
+          .attr("fill", "#69a2a2")
+          .attr("d", path)
+          .attr("value", function(d){ return d.properties.google_name})
+          .attr("stroke", "white")
+
+  // Add the labels
+  svg.append("g")
+      .selectAll("labels")
+      .data(data.features)
+      .enter()
+      .append("text")
+        .attr("x", function(d){return path.centroid(d)[0]})
+        .attr("y", function(d){return path.centroid(d)[1]})
+        .text(function(d){ return d.properties.iso3166_2})
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "central")
+        .style("font-size", 11)
+        .style("fill", "white")
+        .attr("value", function(d){ return d.properties.google_name})
+
+  svg.selectAll("path")
+    .on("click", function() {
+    // get value of selection
+    var value = d3.select(this).attr("value");
+    console.log(value)
+    });
+
+  svg.selectAll("text")
+  .on("click", function() { 
+  // get value of selection
+  var value = d3.select(this).attr("value");
+  console.log(value)
+  });  
+    
+    
   
-  console.log(Data)
-
-  UsaData = Data.filter(d =>d.iso_code == "USA")
-
-  console.log(UsaData)
-
-  const casesMinMax = d3.extent(UsaData, d =>+d.new_cases)
-  console.log(casesMinMax)
-
-  const SizeScale = d3.scaleLinear().domain(casesMinMax).range([8,15]);
-
-  const MaxValue = d3.max(UsaData, d => +d.new_cases)
-  console.log(MaxValue)
-
-  const MaxCircleSize = SizeScale(MaxValue)
-  console.log(MaxCircleSize)
-
-  console.log(VirusPath)
-
-  var ChoosenValueForDay = 40000
+})
 
 
 
 
-  var VirusSize = SizeScale(ChoosenValueForDay)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // ***********
+  // VIRUS PATH code
+  // ************
+
+//   // Retrieve data from the CSV file and execute everything below
+// d3.csv("assets/data/owid-covid-data.csv").then(function(Data) {
+  
+//   console.log(Data)
+
+//   UsaData = Data.filter(d =>d.iso_code == "USA")
+
+//   console.log(UsaData)
+
+//   const casesMinMax = d3.extent(UsaData, d =>+d.new_cases)
+//   console.log(casesMinMax)
+
+//   const SizeScale = d3.scaleLinear().domain(casesMinMax).range([8,15]);
+
+//   const MaxValue = d3.max(UsaData, d => +d.new_cases)
+//   console.log(MaxValue)
+
+//   const MaxCircleSize = SizeScale(MaxValue)
+//   console.log(MaxCircleSize)
+
+//   console.log(VirusPath)
+
+//   var ChoosenValueForDay = 40000
+
+//   var VirusSize = SizeScale(ChoosenValueForDay)
+
+//   var virusGroup = svg2.append("g").attr("transform", `translate(${width/2}, ${height/2})`);
   
 
-  var virusGroup = svg2.append("g").attr("transform", `translate(${width/2}, ${height/2})`);
-  
-
-  
-
-
-  virusGroup.selectAll('path')
-    .data([VirusPath])
-    .enter()
-    .append('path')
-    .attr('d', VirusPath)
-    // .attr("transform-origin", "50% 50%")
-    .style("fill", "#90C4E4")    
-    // .transition().duration(200).attrTween("transform", function(d, i, a) {
-    //   return d3.interpolateString(a, 'scale(10)');
-  // });
-    .attr("transform", ` scale(5)`)
-    // .attr("transform-origin", "center center");
+//   virusGroup.selectAll('path')
+//     .data([VirusPath])
+//     .enter()
+//     .append('path')
+//     .attr('d', VirusPath)
+//     .style("fill", "#90C4E4")    
+//     .attr("transform", ` scale(5)`)
 
 
-    virusGroup.selectAll("circle")
-    .data([VirusPath])
-    .enter()
-    .append("circle")
-    .attr("cx", 13)
-    .attr("cy", 13)
-    .attr("r", 13)
-    .attr("fill", "pink")
-    .attr("opacity", ".25")
-    // .attr("transform-origin", "50% 50%")
-    // .attr("transform", `translate(${width/2}, ${height/2}) scale(2)`)
-  //   .transition().duration(20).attrTween("transform", function(d, i, a) {
-  //     return d3.interpolateString(a, 'scale(13)');
-  // });
-    // .attr("transform", `translate(200, 200)`)
-    // .attr("transform-origin", "left")
-    .attr("transform", `scale(5)`);  
+//     virusGroup.selectAll("circle")
+//     .data([VirusPath])
+//     .enter()
+//     .append("circle")
+//     .attr("cx", 13)
+//     .attr("cy", 13)
+//     .attr("r", 13)
+//     .attr("fill", "pink")
+//     .attr("opacity", ".25")
+//     .attr("transform", `scale(5)`);  
 
-    virusGroup.selectAll("circle2")
-    .data([VirusPath])
-    .enter()
-    .append("circle")
-    .attr("cx", 13)
-    .attr("cy", 13)
-    .attr("r", 5)
-    .attr("fill", "red")
-    .attr("opacity", ".25")
-    .attr("transform", `scale(5)`);  
+//     virusGroup.selectAll("circle2")
+//     .data([VirusPath])
+//     .enter()
+//     .append("circle")
+//     .attr("cx", 13)
+//     .attr("cy", 13)
+//     .attr("r", 5)
+//     .attr("fill", "red")
+//     .attr("opacity", ".25")
+//     .attr("transform", `scale(5)`);  
+
+// });
 
 
-  //   virusGroup.transition().duration(2000).attrTween("transform", function(d, i, a) {
-  //     return d3.interpolateString(a, 'scale(3)');
-  // });
-
-  
+// **********************
+// d3 HOMEWORK
+// **********************
 
 
-
-});
-
-
-
-
-
-
-
-
+// ***********************************************************
 
 // // Initial Parameters
 // var chosenXAxis = "poverty";
