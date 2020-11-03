@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>COVID Cases & deaths</title>
+
+<!--Styles-->
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/d3Style.css">
+<!--Google Fonts Link -->
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+<!--Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>COVID Cases & Deaths</h1>
+        <h3>Use the interactive charts below to compare the COVID Cases & Deaths in each U.S state</h3>
+      </div>
+    </div>
+    <!-- Plotly Graph 1 -->
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>State Selector:</h5>
+          <select id="selDataset"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <!-- <h3 class="panel-title">US State:</h3> -->
+          </div>
+          <div id="stateData" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="myDiv"></div>
+      </div>
+
+      <!-- Plotly Graph 1 -->
+      <!-- <div class="row"> -->
+      <div class="col-md-2">
+        <div class="well">
+          <h5>State Selector:</h5>
+          <select id="selDataset2"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <!-- <h3 class="panel-title">US State:</h3> -->
+          </div>
+          <div id="stateData2" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="myDiv2"></div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="./static/js/app.js"></script>
+
+
+</body>
+
+</html>
