@@ -13,6 +13,9 @@ Plots & Tables
 Lisa Harrison - Google Mobility, COVID, Trump Tweets
 Stojancho Micovs - Hexbin Map
 
+Database
+Stojancho Micovs
+
 Web Design & Build
 Lisa Harrison
 
