@@ -58,63 +58,44 @@
       <h1>COVID Trends</h1>
     </div>
 
-
-    
+    <!-- Creates the Overall Grid -->
+    <div class="container">
 
       <!--First Row Charts -->
       <div class="row">
+
         <!--First Column in this Row-->
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="box">
             <h1>Mobility Chart</h1>
             <div id="myDiv"></div>
-          </div>
-        </div>
-
-        <!--Second Column in this Row-->
-        <div class="col-md-6">
-          <div class="box">
-            <h1>COVID Cases & Deaths</h1>
-            <div id="myDiv2"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Drop down Select State for each plot -->
-
-      <!--Second Row Drop Down-->
-      <div class="row">
-        <!--First Column in this Row-->
-        <div class="col-md-6">
-          <div class="box">
             <h3>Select State:</h3>
             <div id="stateData" class="panel-body">
               <select id="selDataset"></select>
             </div>
           </div>
         </div>
-      </div>
 
-      <!--Second Column in this Row-->
-      <div class="col-md-6">
-        <div class="box">
-          <h3>Select State:</h3>
-          <div id="stateData" class="panel-body">
-            <select id="selDataset2"></select>
+        <!--Second Column in this Row-->
+        <div class="col-lg-6">
+          <div class="box">
+            <h1>COVID Cases & Deaths</h1>
+            <div id="myDiv2"></div>
+            <h3>Select State:</h3>
+            <div id="stateData2" class="panel-body">
+              <select id="selDataset2"></select>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- <footer class="footer">
-      <span class="bottom">Tweets Table</span>
-    </footer>
-  </div> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="static/js/app.js"></script>
+
+  </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="static/js/app.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+/* #stateData2 {
+font-family: Ubuntu, sans-serif; 
+padding-left: 430px;
+} */
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 /* .wrapper {
   position: relative;
@@ -126,9 +130,9 @@ select {
   #table-area thead {
     display: none;
   }
-  /* .hero h1 {
+  .hero h1 {
     animation: smaller-title 1.2s forwards linear;
-  } */
+  }
 }
 
 /* keyframe animations which will be used to animate the title */
