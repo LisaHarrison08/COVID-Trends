@@ -7,7 +7,9 @@
 
 // Google Mobility Plotly Chart Selected By State
 
-Plotly.d3.json('./data/data_us.json', function (err, rows) {
+Plotly.d3.json('./data/Merged_data.json', function (err, rows) {
+
+    console.log(rows)
 
     function unpack(rows, key) {
         return rows.map(function (row) { return row[key]; });
@@ -35,10 +37,13 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
     function getData(state){
         let data = byState(state);
           drawPlot(data, state);
+          drawPlotSBrevenu(data, state);
+          drawPlotCovid(data, state);
     }
       
     //4. by default, trigger graph for "Alabama"
     getData("Alabama"); //default state
+    
 
     // **********
     // Change in the drawPlot Function. 
@@ -178,6 +183,8 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/u
     // The byState function filters the data by state ...return rows.filter(function (row) { return row.states === state; })
     // drawPlot, simply draws the plot fit the filtered data
     drawPlot(byState(value1), value1);
+    drawPlotSBrevenu(byState(value1), value1);
+    drawPlotCovid(byState(value1), value1);
     });
 
 // The map has two part, the path (blue colour) and the text. this is event listener for the text 
@@ -189,11 +196,88 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/u
   var value1 = value.slice(0, EndCut-2);
   console.log(value1)
   drawPlot(byState(value1), value1);
-  
+  drawPlotSBrevenu(byState(value1), value1);
+  drawPlotCovid(byState(value1), value1);
   });  
     
     
   
 }) //Ends the data load and function for the map   
+
+
+// function for plottyng SB revenue
+function drawPlotSBrevenu(rows, state) {
+    var trace1 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Small Business Revenu',
+        x: unpack(rows, 'dates'),
+        y: unpack(rows, 'revenue_all'),
+        line: { color: '#00CED1' }
+    }
+    var data = [trace1];
+
+    var layout = {
+        title: `Small Business Revenue for ${state}`,
+    };
+
+    Plotly.newPlot('plot-revenue', data, layout);
+}//Ends the Drow plot for SB revenu
+
+// Function for plottying covid cases
+
+function drawPlotCovid(rows, state) {
+
+    var trace1 = {
+        x: unpack(rows, 'dates'),
+        y: unpack(rows, 'new_case_count'),
+        name: 'Daily Covid Cases',
+        marker: {color: 'rgb(55, 83, 109)'},
+        type: 'bar'
+      };
+      
+      var trace2 = {
+        x: unpack(rows, 'dates'),
+        y: unpack(rows, 'case_count'),
+        name: 'Total Covid Case Count',
+        marker: {color: 'rgb(26, 118, 255)'},
+        type: 'bar'
+      };
+      
+      var data = [trace1, trace2];
+      
+      var layout = {
+        title: `Covid Cases, daily and total for ${state}`,
+        xaxis: {tickfont: {
+            size: 14,
+            color: 'rgb(107, 107, 107)'
+          }},
+        yaxis: {
+          title: 'Number of Cases',
+          titlefont: {
+            size: 16,
+            color: 'rgb(107, 107, 107)'
+          },
+          tickfont: {
+            size: 14,
+            color: 'rgb(107, 107, 107)'
+          }
+        },
+        legend: {
+          x: 0,
+          y: 1.0,
+          bgcolor: 'rgba(255, 255, 255, 0)',
+          bordercolor: 'rgba(255, 255, 255, 0)'
+        },
+        barmode: 'group',
+        bargap: 0.15,
+        bargroupgap: 0.1
+      };
+      
+      Plotly.newPlot('plot-covid', data, layout);
+
+
+};
+
 
 }) //Ends the Promise 
