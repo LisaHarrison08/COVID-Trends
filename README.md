@@ -1,4 +1,9 @@
-### Deployed dashboard to Heroku. Page can be viewed via this link: https://project3-dashboard-test.herokuapp.com/index.html
+
+### Published Page on Github:
+https://lisaharrison08.github.io/Dashboard-Test/index.html
+
+
+### Deployed dashboard to Heroku. Page can be viewed via this link - (map not displaying) https://project3-dashboard-test.herokuapp.com/index.html
 
 # COVID-Trends
 
