@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mobility Comparison</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css"
+    integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/google.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" style="background-color: #6dccf1;" href="index.html">HOME</a>
+        <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse"
+          data-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <!-- Navigation Bar Link to Page -->
+        <div class="collapse navbar-collapse" id="navDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="comparison.html" id="navdropDown-menulink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Comparison
+              </a>
+            </li>
+            <!-- Navigation Bar Link to Page -->
+            <li class="nav-item">
+              <a class="nav-link" href="tweets.html">Trump Tweets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="google.html">Google</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="hero text-center">
+      <h1>Google Community</h1>
+    </div>
+
+    <!-- Creates the Overall Grid -->
+    <div class="container">
+
+      <!--First Row Charts -->
+      <div class="row">
+
+        <!--First Column in this Row-->
+        <div class="col-lg-6">
+          <div class="box">
+            <h3>Google Mobility</h3>
+            <div id="myDiv"></div>
+            <h3>Select State:</h3>
+            <div id="stateData" class="panel-body">
+              <select id="selDataset"></select>
+            </div>
+          </div>
+        </div>
+
+        <!--Second Column in this Row-->
+        <div class="col-lg-6">
+          <div class="box">
+            <h3>Google Mobility</h3>
+            <div id="myDiv2"></div>
+            <h3>Select State:</h3>
+            <div id="stateData2" class="panel-body">
+              <select id="selDataset2"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="static/js/google.js"></script>
+</body>
+
+</html>
