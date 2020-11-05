@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tweets Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css"
+    integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/tweets.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" style="background-color: #6dccf1;" href="index.html">HOME</a>
+        <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Bar Link to Page -->
+        <div class="collapse navbar-collapse" id="navDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html" aria-haspopup="true" aria-expanded="false">
+                Comparison
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="google.html">Google</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tweets.html">Trump Tweets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pets.html">Pets</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero text-center">
+      <h1>Trump Tweets</h1>
+      <p>Search for Trumps Tweet of The Day</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-10">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="filterDt" type="text" placeholder="2020-02-15">
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-primary" type="button" onClick="filterDate()">Submit</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="tweet-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">Text</th>
+                </tr>
+              </thead>
+              <span id="tbodyId">
+                <tbody></tbody>
+              </span>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">Tweets Table</span>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/tweetapp.js"></script>
+</body>
+
+</html>
