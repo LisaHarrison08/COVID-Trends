@@ -162,7 +162,7 @@ var layout = {
 };
 
 // Plot the chart to a div tag with id "bar-plot"
-Plotly.newPlot("adoption-plot", data, layout);
+Plotly.newPlot("petadoptintake-plot", data, layout);
 
 
 
