@@ -1,4 +1,25 @@
 -- Create tables for raw data to be loaded into
+
+-- run this QUERY
+
+CREATE TABLE merged_data (
+States              VARCHAR(80) NOT NULL,
+Dates               VARCHAR(80) NOT NULL,
+SMA_retail_recreation   FLOAT,
+SMA_grocery_pharmacy    FLOAT,
+SMA_parks               FLOAT,
+SMA_transit             FLOAT,
+SMA_workplaces          FLOAT,
+SMA_residential         FLOAT,
+case_count				FLOAT,
+new_case_count			FLOAT,
+revenue_all				FLOAT,
+revenue_ss60			FLOAT	
+);
+
+
+
+
 CREATE TABLE google_data (
 States              VARCHAR(80) NOT NULL,
 Dates               VARCHAR(80) NOT NULL,

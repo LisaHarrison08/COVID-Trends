@@ -3,6 +3,7 @@
 
 Plotly.d3.json('./data/data_us.json', function (err, rows) {
 
+    console.log(rows)
     function unpack(rows, key) {
         return rows.map(function (row) { return row[key]; });
     }
@@ -30,7 +31,9 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
         let data = byState(state);
           drawPlot(data);
     }
-      
+     
+    console.log(unpack(rows, 'dates'))
+    console.log(unpack(rows, 'SMA_retail_recreation'))
     //4. by default, trigger graph for "Alabama"
     getData("Alabama"); //default state
 
