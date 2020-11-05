@@ -162,7 +162,7 @@ var layout = {
 };
 
 // Plot the chart to a div tag with id "bar-plot"
-Plotly.newPlot("barchart1-plot", data, layout);
+Plotly.newPlot("adoption-plot", data, layout);
 
 
 

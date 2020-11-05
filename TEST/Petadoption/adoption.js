@@ -123,35 +123,35 @@ var intake2019 = [33266,
   
   
   // Create the Trace
-  var trace1 = {
+  
+  
+  var trace2 = {
     x: weeks,
-    y: intake2019,
-    name: 'Intake2019',
+    y: adoptions2019,
+    name: 'Adoptions2019',
     type: "bar"
   };
   
-   
-  var trace3 = {
+    
+  var trace4 = {
     x: weeks,
-    y: intake2020,
-    name: 'Intake2020',
+    y: adoptions2020,
+    name: 'Adoptions2020',
     type: "bar"
   };
-  
-  
   
   // Create the data array for the plot
-  var data = [trace1, trace3];
+  var data = [trace2,trace4];
   
   // Define the plot layout
   var layout = {
-    title: "Covid Trends in Pet Adoption: Number of Intake Pets",
+    title: "Covid Trends in Pet Adoption: Animals Adopted in 2019 and 2020",
     xaxis: { title: "Weeks" },
     yaxis: { title: "Number of Pets" }
   };
   
   // Plot the chart to a div tag with id "bar-plot"
-  Plotly.newPlot("barchart2-plot", data, layout);
+  Plotly.newPlot("adoption-plot", data, layout);
   
   
   
