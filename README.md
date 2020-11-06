@@ -9,15 +9,15 @@
 ### Project Contributors: Lisa Harrison | Stojancho Micov | Lori Ward | Ingrid Deukou
 
 #### Data Cleanup:
-Stojancho Micovs | Lisa Harrison - Google Mobility 
-Stojancho Micovs - Merged Data 
-Lisa Harrison - Trump Tweets 
-Ingrid Deukou - State Covid & Business Revenue 
+* Stojancho Micovs | Lisa Harrison - Google Mobility 
+* Stojancho Micovs - Merged Data 
+* Lisa Harrison - Trump Tweets 
+* Ingrid Deukou - State Covid & Business Revenue 
 
 #### Plots & Tables
-Lisa Harrison - Google Mobility, COVID, Trump Tweets
-Stojancho Micovs - Hexbin Map & Interactive Charts
-Lori Ward - Pet Adoption
+* Lisa Harrison - Google Mobility, COVID, Trump Tweets
+* Stojancho Micovs - Hexbin Map & Interactive Charts
+* Lori Ward - Pet Adoption
 
 #### Database & Heroku Deployment
 Lisa Harrison | Stojancho Micovs
