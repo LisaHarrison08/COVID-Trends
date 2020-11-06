@@ -61,10 +61,10 @@ As Covid-19 changes our world and our daily habits, pets in the United States co
 All data, available for public use, is sourced from Google Community Mobility Reports, The Trump Archive and The New York Times. This project does not claim any ownership over the data, and is not reponsible for guaranteeing accuracy of the data.
 
 ### Website Images
-Home Page: Blue Gradient Color Corona Virus Creative Background: Background Photos from  <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>
-Google Page: Photo by Ishan @seefromthesky on Unsplash
-Trump Tweets: Twitter Image sourced from the dailydot.com
-Comparison Page: Photo by h heyerlein on Unsplash
-Pets Page: Photo by Hannah Troupe on Unsplash
+* Home Page: Blue Gradient Color Corona Virus Creative Background: Background Photos from  <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>
+* Google Page: Photo by Ishan @seefromthesky on Unsplash
+* Trump Tweets: Twitter Image sourced from the dailydot.com
+* Comparison Page: Photo by h heyerlein on Unsplash
+* Pets Page: Photo by Hannah Troupe on Unsplash
 
 
