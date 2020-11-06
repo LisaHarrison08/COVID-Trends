@@ -1,7 +1,7 @@
 
    // Google Mobility Plotly Chart Selected By State
 
-Plotly.d3.json('./data/data_us.json', function (err, rows) {
+Plotly.d3.json('./data/Merged_data.json', function (err, rows) {
 
     function unpack(rows, key) {
         return rows.map(function (row) { return row[key]; });
@@ -95,7 +95,7 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
 
 // Google Mobility Plotly Chart 2 Selected By State
 
-Plotly.d3.json('./data/data_us.json', function (err, rows) {
+Plotly.d3.json('./data/Merged_data.json', function (err, rows) {
 
     function unpack(rows, key) {
         return rows.map(function (row) { return row[key]; });
