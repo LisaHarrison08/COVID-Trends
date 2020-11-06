@@ -41,8 +41,8 @@ Plotly.d3.json('./data/Merged_data.json', function (err, rows) {
 
     // **********
     // Change in the drawPlot Function. 
-    // im adding the state as a value the function takes, 
-    // and use it in the title, so wiht each plot the title will change
+    // Adding the state as a value the function takes, 
+    // and use it in the title, so with each plot the title will change
     // **********
     function drawPlot(rows, state) {
         var trace1 = {
