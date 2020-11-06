@@ -86,7 +86,7 @@ Plotly.d3.json('./data/data_us.json', function (err, rows) {
         var data = [trace1, trace2, trace3, trace4, trace5, trace6];
 
         var layout = {
-            title: 'Mobility Trends',
+            title:'Mobility Trends',
         };
 
         Plotly.newPlot('myDiv', data, layout);
@@ -246,7 +246,7 @@ function drawPlot(rows){
     var data = [trace1, trace2];
 
     var layout = {
-        title: 'U.S COVID Cases & Deaths',
+        title:'Cases & Deaths',
     };
 
     Plotly.newPlot('myDiv3', data, layout);
@@ -313,7 +313,7 @@ function drawPlot(rows){
     var data = [trace1, trace2];
 
     var layout = {
-        title: 'U.S COVID Cases & Deaths',
+        title: 'Cases & Deaths',
     };
 
     Plotly.newPlot('myDiv4', data, layout);

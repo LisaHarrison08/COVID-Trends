@@ -30,9 +30,9 @@ Lori Ward | Ingrid Deuoke
 
 ## Project Overview
 
-In response to tackling the Coronavirus pandemic, countries across the world have implemented a number of different policies. Including 'stay-at-home orders', work place closures (with many employees working from home), school closures (online teaching being adopted by many schools) as well as restrictions on social gatherings, public transportation, and cancellations of large events.  Such measures were taken in order to slow the spread of the virus through limiting public movement and interactions.
+In response to tackling the Coronavirus pandemic, countries across the world have implemented a number of different policies, including; 'stay-at-home orders', work place closures (with many employees working from home), school closures (online teaching being adopted by many schools) as well as restrictions on social gatherings, public transportation, and cancellations of large events.  Such measures were taken in order to slow the spread of the virus through limiting public movement and interactions.
 
-What impact has this had on movement?
+What impact have these restrictions had on US citizens' movements around the country?
 
 Google presented its COVID-19 Community Mobility Reports  (https://www.google.com/covid19/mobility/) which measures visitor numbers to specfic category locations:
 
@@ -47,7 +47,7 @@ Google presented its COVID-19 Community Mobility Reports  (https://www.google.co
 
 What was the President of the United States response to the pandemic?
 
-Trump + Twitter, what a combination! He is likely the only President in the world that uses Twitter the most who also doesn’t seem to have a team of people managing the account for him. 
+Trump + Twitter, what a combination! He is likely the only President in the world that uses Twitter without a team of people managing the account for him. 
 
 Select the date and see the tweet!
 
