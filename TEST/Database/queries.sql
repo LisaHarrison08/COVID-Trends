@@ -14,7 +14,8 @@ SMA_residential         FLOAT,
 case_count				FLOAT,
 new_case_count			FLOAT,
 revenue_all				FLOAT,
-revenue_ss60			FLOAT	
+revenue_ss60			FLOAT,
+deaths					FLOAT
 );
 
 
