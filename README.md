@@ -1,31 +1,32 @@
 
 ### Published Page on Github:
-https://lisaharrison08.github.io/Dashboard-Test/index.html
 
 
-### Deployed dashboard to Heroku. Page can be viewed via this link - (map not displaying) https://project3-dashboard-test.herokuapp.com/index.html
+### Deployed dashboard to Heroku. Page can be viewed via this link: https://project3-dashboard.herokuapp.com/index.html
 
 # COVID-Trends
 
 ### Project Contributors: Lisa Harrison | Stojancho Micov | Lori Ward | Ingrid Deukou
 
-Data Cleanup:
-Google Mobility - Stojancho Micovs
-Trump Tweets - Lisa Harrison
-State Covid - Ingrid Deukou
+#### Data Cleanup:
+Stojancho Micovs | Lisa Harrison - Google Mobility 
+Stojancho Micovs - Merged Data 
+Lisa Harrison - Trump Tweets 
+Ingrid Deukou - State Covid & Business Revenue 
 
-Plots & Tables
+#### Plots & Tables
 Lisa Harrison - Google Mobility, COVID, Trump Tweets
-Stojancho Micovs - Hexbin Map
+Stojancho Micovs - Hexbin Map & Interactive Charts
+Lori Ward - Pet Adoption
 
-Database
-Stojancho Micovs
+#### Database & Heroku Deployment
+Lisa Harrison | Stojancho Micovs
 
-Web Design & Build
+#### Web Design & Build
 Lisa Harrison
 
-Presentation/Write Up
-Lori Ward
+#### Presentation/Write Up
+Lori Ward | Ingrid Deuoke
 
 ## Project Overview
 
@@ -53,6 +54,9 @@ Select the date and see the tweet!
 ## COVID Cases & Deaths
 The New York Times released a series of data files with cumulative counts of coronavirus cases in the United States, at the state and county level, over time. Users can view the data to compare US states cases and deaths over time.
 
+## Pet Adoption & Intake During COVID
+As Covid-19 changes our world and our daily habits, pets in the United States continue to be born, surrendered to shelters, and adopted into loving homes.  The charts represent data from 1200 animal welfare organizations around the country and compare weekly data from 2019 and 2020
+
 ### Credits
 All data, available for public use, is sourced from Google Community Mobility Reports, The Trump Archive and The New York Times. This project does not claim any ownership over the data, and is not reponsible for guaranteeing accuracy of the data.
 
@@ -61,5 +65,6 @@ Home Page: Blue Gradient Color Corona Virus Creative Background: Background Phot
 Google Page: Photo by Ishan @seefromthesky on Unsplash
 Trump Tweets: Twitter Image sourced from the dailydot.com
 Comparison Page: Photo by h heyerlein on Unsplash
+Pets Page: Photo by Hannah Troupe on Unsplash
 
 
