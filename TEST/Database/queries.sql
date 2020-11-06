@@ -69,3 +69,7 @@ FROM google_data g
 JOIN covid_data c , us_data u
 ON g.states = c.states, u.dates AND g.dates=c.dates, u.dates;
 
+-- Include following if insufficient permission error in pandas:
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO postgres;
+

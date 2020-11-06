@@ -226,7 +226,7 @@ getData("Alabama"); //default state
 
 function drawPlot(rows){
     var trace1 = {
-        type: "scatter",
+        type: "bar",
         mode: "lines",
         name: 'Cases',
         x: unpack(rows, 'date'),
@@ -235,7 +235,7 @@ function drawPlot(rows){
     }
 
     var trace2 = {
-        type: "scatter",
+        type: "bar",
         mode: "lines",
         name: 'Deaths',
         x: unpack(rows, 'date'),
@@ -293,7 +293,7 @@ getData("Alabama"); //default state
 
 function drawPlot(rows){
     var trace1 = {
-        type: "scatter",
+        type: "bar",
         mode: "lines",
         name: 'Cases',
         x: unpack(rows, 'date'),
@@ -302,7 +302,7 @@ function drawPlot(rows){
     }
 
     var trace2 = {
-        type: "scatter",
+        type: "bar",
         mode: "lines",
         name: 'Deaths',
         x: unpack(rows, 'date'),
