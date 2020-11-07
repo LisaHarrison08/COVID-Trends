@@ -1,4 +1,4 @@
-,states,dates,SMA_retail_recreation,SMA_grocery_pharmacy,SMA_parks,SMA_transit,SMA_workplaces,SMA_residential,case_count,new_case_count,revenue_all,revenue_ss60,deaths
+,states,dates,retail_recreation,grocery_pharmacy,parks,transit,workplaces,residential,case_count,new_case_count,revenue_all,revenue_ss60,deaths
 0,Alabama,2020-02-15,-4.3533333333333335,3.583870967741936,1.6666666666666667,4.946666666666667,-22.84444444444444,7.441666666666666,0.0,0.0,0.0647,0.0042099999,
 1,Alabama,2020-02-16,-4.3356321839080465,3.376344086021505,1.8,5.013333333333334,-21.935460992907807,7.1083333333333325,0.0,0.0,0.0427,-0.0060700001,
 2,Alabama,2020-02-17,-4.324137931034483,3.105555555555556,2.0,5.14,-21.56808510638298,6.916666666666666,0.0,0.0,-0.022,-0.070600003,
